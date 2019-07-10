@@ -1,0 +1,32 @@
+{
+  "output_file": "Settings/settings.json",
+  "Command": {
+    "type": "textbox",
+    "value": "!subnext",
+    "label": "Command",
+    "tooltip": "The command that will be responded to.",
+    "group": "Core"
+  },
+  "Permission": {
+    "type": "dropdown",
+    "value": "moderator",
+    "items": ["everyone","moderator","subscriber","user_specific","editor"],
+    "label": "Permission",
+    "tooltip": "Who is able to use the command",
+    "group": "Core"
+  },
+  "Response": {
+      "type": "textbox",
+      "value": "you're up next!",
+      "label": "Response",
+      "tooltip": "The message to display. The chosen user will be put BEFORE the message.",
+      "group": "Core"
+    },
+    "NoSubsResponse": {
+      "type": "textbox",
+      "value": "No subs in queue, next is:",
+      "label": "Response",
+      "tooltip": "The message to display when no subs are in queue. The chosen user will be put AFTER the message.",
+      "group": "Core"
+    }
+}
